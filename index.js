@@ -1,8 +1,7 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
-const token = 'Njg1NjI5MjE5NzQ4ODM5NDI5.XmkZJQ.KWZi8TN2L2h_C8PSxydbPfTdLSs';
 var version = '0.420.69'
-const PREFIX = '.';
+const PREFIX = ';';
 
 bot.on('ready', () => {
     console.log('Slurp Bot is now online!');
@@ -11,7 +10,7 @@ bot.on('ready', () => {
 bot.on('message', message => {
 
     let args = message.content.toLowerCase().substring(PREFIX.length).split(" ");
-    if (!message.content.startsWith('.')) return;
+    if (!message.content.startsWith(';')) return;
 
     switch (args[0]) {
         case 'website':
@@ -113,4 +112,4 @@ bot.on('message', message => {
     }
 })
 
-bot.login(token);
+bot.login(process.env.BOT_TOKEN);
