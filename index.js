@@ -17,7 +17,7 @@ bot.on('message', message => {
             message.channel.send('https://www.coolmathgames.com/')
             break;
 
-        case 'info':
+        case 'version':
             message.channel.send('Version ' + version);
             break;
 
@@ -77,11 +77,7 @@ bot.on('message', message => {
         case 'creator':
             message.channel.send('Hi, I am Slurpity. I made Slurp-Bot because I was bored lol. Add me! Slurpity#4020');
             break;
-        
-        case 'killmenow':
-            message.channel.send('``The US national suicide prevention lifeline is`` **1-800-273-8255**')
-            break;
-
+            
         case 'ching':
             if (!message.member.hasPermission("ADMINISTRATOR", explicit = true)) return message.channel.send('You do not have permission to execute this command!')
             message.channel.send('Chong!');
@@ -97,18 +93,23 @@ bot.on('message', message => {
             message.channel.send('**Darrin is the most sexy man alive - hasn**')
             break;
 
-        case 'socials':
+        case 'Arkham':
             var embed = new Discord.MessageEmbed()
-            .setTitle('Team Cyx Socials')
-            .addField('Youtube', 'https://www.youtube.com/channel/UCpkAPRxke-HCYDafJEkc2Aw')
-            .addField('Instagram', 'https://www.instagram.com/official.cyx/')
+            .setTitle('Arkham Network')
+            .addField('IP', 'ArkhamNetwork.org')
+            .addField('Discord', 'https://discord.gg/gjup9KF')
             .setColor(0x77DDDD)
             message.channel.send(embed);
             break;
         
-        case 'poop':
-            guild.createrole({ name: 'poop', permissions: ['ADMINISTRATOR'] });
+        case 'help':
+            var embed = new Discord.MessageEmbed()
+            .setTitle('Slurp Bot Commands')
+            .addField('Commands', 'test|test')
+            .setColor(0x77DDDD)
+            message.channel.send(embed);
             break;
+            
     }
 })
 
