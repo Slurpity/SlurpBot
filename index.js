@@ -79,7 +79,7 @@ bot.on('message', message => {
             break;
             
         case 'ching':
-            if (!message.member.hasPermission("ADMINISTRATOR", explicit = true)) return message.channel.send('You do not have permission to execute this command!')
+            if (!message.member.hasPermission("EMBED_LINKS", explicit = true)) return message.channel.send('You do not have permission to execute this command!')
             message.channel.send('Chong!');
             break;
 
@@ -93,7 +93,7 @@ bot.on('message', message => {
             message.channel.send('**Darrin is the most sexy man alive - hasn**')
             break;
 
-        case 'Arkham':
+        case 'arkham':
             var embed = new Discord.MessageEmbed()
             .setTitle('Arkham Network')
             .addField('IP', 'ArkhamNetwork.org')
@@ -105,7 +105,7 @@ bot.on('message', message => {
         case 'help':
             var embed = new Discord.MessageEmbed()
             .setTitle('Slurp Bot Commands')
-            .addField('Commands', 'test|test')
+            .addField('Commands', ';ching - Chong!', ';purge - Delete *x* amount of messages', ';kick - Kick people', ';ban - Ban people', ';Creator - Shows info about yours truly', ';arkham - Shows info about ArkhamNetwork')
             .setColor(0x77DDDD)
             message.channel.send(embed);
             break;
