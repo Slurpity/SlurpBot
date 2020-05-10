@@ -105,12 +105,12 @@ bot.on('message', message => {
         case 'help':
             var embed = new Discord.MessageEmbed()
             .setTitle('Slurp Bot Commands')
-            .addField('Commands', ';ching - Chong!')
-            .addField('', ';purge - Delete *x* amount of messages')
-            .addField('', ';kick - Kick people')
-            .addField('', ';ban - Ban people')
-            .addField('', ';creator - Shows info about yours truly')
-            .addField('', ';arkham - Shows info about ArkhamNetwork')
+            .addField(';ching', 'Chong!')
+            .addField(';purge', 'Deletes *x* amount of messages')
+            .addField(';kick', 'Kicks people')
+            .addField(';ban', 'Bans people')
+            .addField(';creator', 'Shows info about yours truly')
+            .addField(';arkham', 'Shows info about ArkhamNetwork')
             .setColor(0x77DDDD)
             message.channel.send(embed);
             break;
