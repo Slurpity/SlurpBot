@@ -113,6 +113,9 @@ bot.on('message', message => {
             .addField(';ban', 'Bans people')
             .addField(';creator', 'Shows info about yours truly')
             .addField(';arkham', 'Shows info about ArkhamNetwork')
+            .addField(';bj', 'Give someone a blowjob...')
+            .addField(';peg', 'Fuck someone in the ass...)
+            .addField(';cumshot', 'Shoot cum like SpiderMan onto someone')
             .setColor(0x77DDDD)
             message.channel.send(embed);
             break;
