@@ -14,9 +14,9 @@ bot.on('message', message => {
 
     switch (args[0]) {
         case 'website':
-            message.channel.send('https://www.coolmathgames.com/')
-            message.channel.send('https://www.pornhub.com/')
-            message.channel.send('https://www.hanime.tv/')
+            message.channel.send('<https://www.coolmathgames.com/>')
+            message.channel.send('<https://www.pornhub.com/>')
+            message.channel.send('<https://hanime.tv/>')
             break;
 
         case 'version':
