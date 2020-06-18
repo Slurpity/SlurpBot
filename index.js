@@ -15,6 +15,8 @@ bot.on('message', message => {
     switch (args[0]) {
         case 'website':
             message.channel.send('https://www.coolmathgames.com/')
+            message.channel.send('https://www.pornhub.com/')
+            message.channel.send('https://www.hanime.tv/')
             break;
 
         case 'version':
@@ -114,7 +116,44 @@ bot.on('message', message => {
             .setColor(0x77DDDD)
             message.channel.send(embed);
             break;
-            
+        
+        case 'bj':
+            if (!message.member.hasPermission("MANAGE_MESSAGES", explicit = true)) return message.channel.send("No one wants your fatass to suck their dick")
+            if (!args[1]) return message.channel.send(`Who's dick do you want to suck?`)
+            var user = message.mentions.users.first();
+            if (user) {
+                var member = message.guild.member(user);
+                if (member) {
+                    message.channel.send(`You just sucked ${user}'s dick... hoe`)
+                    };
+            }
+            break;
+
+        case 'peg':
+            if (!message.member.hasPermission("MANAGE_MESSAGES", explicit = true)) return message.channel.send("No one wants your tiny dick in their ass")
+            if (!args[1]) return message.channel.send(`Who do you want to fuck in the ass?`)
+            var author = message.author;
+            var user = message.mentions.users.first();
+            if (user) {
+                var member = message.guild.member(user);
+                if (member) {
+                    message.channel.send(`${user} has been **fucked** in the ass by ${author}... Oh shit it's pretty damn bloody!`)
+                    };
+            }
+            break;
+
+        case 'cumshot':
+            if (!message.member.hasPermission("MANAGE_MESSAGES", explicit = true)) return message.channel.send("Your cumshots are weak as hell")
+            if (!args[1]) return message.channel.send(`Who do you want to cum all over?`)
+            var author = message.author;
+            var user = message.mentions.users.first();
+            if (user) {
+                var member = message.guild.member(user);
+                if (member) {
+                    message.channel.send(`${user} got covered in hot sticky **cum**! **"WHAT ARE YOU DOING STEP BRO!?"** They yell at ${author} as he pulls up his cum-covered pants and walks away...`)
+                    };
+            }
+            break;
     }
 })
 
