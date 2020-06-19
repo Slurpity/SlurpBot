@@ -128,7 +128,7 @@ bot.on('message', message => {
                 var member = message.guild.member(user);
                 if (member) {
                     message.channel.send(`You just sucked ${user}'s dick... hoe`)
-                    };
+                    }
             }
             break;
 
