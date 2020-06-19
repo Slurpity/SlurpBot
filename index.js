@@ -140,32 +140,20 @@ bot.on('message', message => {
             if (user) {
                 var member = message.guild.member(user);
                 if (member) {
-                    message.channel.send(`${user} has been **fucked** in the ass by ${author}... Oh shit it's pretty damn bloody!`).then(() =>{
-                    }).catch(err => {
-                        message.channel.send('An error occurred! smh');
-                        console.log(err);
-                    });
+                    message.channel.send(`${user} has been **fucked** in the ass by ${author}... Oh shit it's pretty damn bloody!`)
                     };
             }
             break;
 
         case 'cumshot':
-            if (!message.member.hasPermission("MANAGE_MESSAGES", explicit = true)) return message.channel.send("Your cumshots are weak as hell").then(() =>{
-                    }).catch(err => {
-                        message.channel.send('An error occurred! smh');
-                        console.log(err);
-                    });
+            if (!message.member.hasPermission("MANAGE_MESSAGES", explicit = true)) return message.channel.send("Your cumshots are weak as hell")
             if (!args[1]) return message.channel.send(`Who do you want to cum all over?`)
             var author = message.author;
             var user = message.mentions.users.first();
             if (user) {
                 var member = message.guild.member(user);
                 if (member) {
-                    message.channel.send(`${user} got covered in hot sticky **cum**! **"WHAT ARE YOU DOING STEP BRO!?"** They yell at ${author} as he pulls up his cum-covered pants and walks away...`).then(() =>{
-                    }).catch(err => {
-                        message.channel.send('An error occurred! smh');
-                        console.log(err);
-                    });
+                    message.channel.send(`${user} got covered in hot sticky **cum**! **"WHAT ARE YOU DOING STEP BRO!?"** They yell at ${author} as he pulls up his cum-covered pants and walks away...`)
                     };
             }
             break;
