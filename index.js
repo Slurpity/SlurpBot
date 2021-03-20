@@ -22,6 +22,10 @@ bot.on('message', message => {
         case 'version':
             message.channel.send('Version ' + version);
             break;
+            
+        case 'chen';
+            message.channel.send('naughty chen');
+            break;
 
         case 'prefix':
             message.channel.send(PREFIX)
