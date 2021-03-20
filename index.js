@@ -77,7 +77,7 @@ bot.on('message', message => {
             break;
         
         case 'creator':
-            message.channel.send('Hi, I am Slurpity. I made Slurp-Bot because I was bored lol. Add me! Slurpity#4020');
+            message.channel.send('Hi, I am ilyhasn. I made Penis-Bot because I was bored lol. Add me! ilyhasn#2039');
             break;
             
         case 'ching':
@@ -94,19 +94,10 @@ bot.on('message', message => {
             if (!message.member.hasPermission("ADMINISTRATOR", explicit = true)) return message.channel.send('You do not have permission to execute this command!')
             message.channel.send('**Darrin is the most sexy man alive - hasn**')
             break;
-
-        case 'arkham':
-            var embed = new Discord.MessageEmbed()
-            .setTitle('Arkham Network')
-            .addField('IP', 'ArkhamNetwork.org')
-            .addField('Discord', 'https://discord.gg/gjup9KF')
-            .setColor(0x77DDDD)
-            message.channel.send(embed);
-            break;
-        
+  
         case 'help':
             var embed = new Discord.MessageEmbed()
-            .setTitle('Slurp Bot Commands')
+            .setTitle('Penis Bot Commands')
             .addField(';ching', 'Chong!')
             .addField(';purge', 'Deletes *x* amount of messages')
             .addField(';kick', 'Kicks people')
