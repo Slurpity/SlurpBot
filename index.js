@@ -23,7 +23,7 @@ bot.on('message', message => {
             message.channel.send('Version ' + version);
             break;
             
-        case 'chen';
+        case 'chen':
             message.channel.send('naughty chen');
             break;
 
